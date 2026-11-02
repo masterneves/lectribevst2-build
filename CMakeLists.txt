@@ -8,7 +8,9 @@ juce_add_plugin(electribevst2
     COMPANY_NAME "Masterneves"
     PLUGIN_NAME "electribevst2"
     FORMATS VST3
-    PRODUCT_NAME "electribevst2")
+    PRODUCT_NAME "electribevst2"
+    NEEDS_MIDI_INPUT TRUE
+    IS_SYNTH TRUE)
 
 target_sources(electribevst2 PRIVATE
     PluginProcessor.cpp
