@@ -2,7 +2,6 @@ cmake_minimum_required(VERSION 3.22)
 
 project(electribevst2 VERSION 0.0.1)
 
-# Adiciona o framework JUCE que é descarregado automaticamente
 add_subdirectory(JUCE)
 
 juce_add_plugin(electribevst2
@@ -11,7 +10,6 @@ juce_add_plugin(electribevst2
     FORMATS VST3
     PRODUCT_NAME "electribevst2")
 
-# Usa os ficheiros diretamente a partir da raiz do repositório
 target_sources(electribevst2 PRIVATE
     PluginProcessor.cpp
     PluginProcessor.h
