@@ -16,6 +16,12 @@ jobs:
       with:
         submodules: recursive
 
+    - name: Get JUCE
+      uses: actions/checkout@v4
+      with:
+        repository: juce-framework/JUCE
+        path: JUCE
+
     - name: Configure CMake
       run: cmake -B build -A x64
 
